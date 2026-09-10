@@ -1,5 +1,6 @@
 """Minimal local web UI for the evidence-governed reporting MVP."""
 import json
+import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from .report_engine import ReportEngine
@@ -22,3 +23,14 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     server = ThreadingHTTPServer(("127.0.0.1", 8000), Handler); print("MVP running at http://127.0.0.1:8000"); server.serve_forever()
 if __name__ == "__main__": main()
+import os
+
+def main():
+    port = int(os.environ.get("PORT", "8000"))
+    server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
+    print(f"MVP running at http://0.0.0.0:{port}")
+    server.serve_forever()
+
+if __name__ == "__main__":
+    main()
+    
