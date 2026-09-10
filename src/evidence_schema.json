@@ -1,0 +1,20 @@
+{
+  "evidence_id": "EV-000001",
+  "entity": "Mahanadi Coalfields Limited",
+  "metric": "Coal Production",
+  "value": 0,
+  "unit": "MT",
+  "period": "2024-25",
+  "mining_method": "OC",
+  "quality": "G10",
+  "status": "Actual",
+  "source_document": "OFFICIAL_DOCUMENT_FILENAME.pdf",
+  "source_publisher": "Ministry of Coal",
+  "publication_date": "",
+  "version": "",
+  "page": 0,
+  "table": "",
+  "source_location": "",
+  "extraction_method": "",
+  "notes": ""
+}
